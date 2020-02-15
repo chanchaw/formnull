@@ -18,11 +18,10 @@ export class AppComponent {
 
   constructor(
     private fb:FormBuilder
-  ) { 
-    this.initLoginForm();// 初始化登录表单
-  }
+  ) { }
 
   ngOnInit() {
+    this.initLoginForm();// 初始化登录表单
   }
 
   initLoginForm(){
