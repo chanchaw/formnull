@@ -1,0 +1,58 @@
+/* 整个组件底的样式 */
+
+.component-tray {
+    /* background-color: #dee1e6; */
+    height: 100%;
+    background-image: url(../assets/loginbg.jpg);
+    background-size: 100%;
+}
+
+
+/* 登录表单所在面板 */
+
+.login-panel {
+    background-color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    border-radius: 7px;
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* 登录表单上面的标题 */
+
+.login-title {
+    /* background-color: brown; */
+    font-family: Microsoft YaHei UI;
+    font-size: 1.7em;
+    padding-left: 20px;
+}
+
+.title-container {
+    margin-top: 50px;
+}
+
+
+/* 登录表单的容器 div */
+
+.form-container {
+    margin-top: 30px;
+}
+
+
+/* 下面是 PrimeNG Toast 样式 */
+
+:host ::ng-deep .primeng-custom-toast .ui-toast-message {
+    color: #ffffff;
+    background: #FC466B;
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+}
+
+:host ::ng-deep .primeng-custom-toast .ui-toast-close-icon {
+    color: #ffffff;
+}
