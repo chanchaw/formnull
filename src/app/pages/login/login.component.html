@@ -1,0 +1,105 @@
+<div class="component-tray" nz-row>
+    <div class="login-panel" nz-col nzSpan="6" nzOffset="8">
+
+        <!-- title -->
+        <div class="title-container" nz-row nzType="flex" nzJustify="center" nzAlign="middle">
+            <div class="login-icon" nz-col nzSpan="2">
+                <img src="../../../favicon.ico" alt="">
+            </div>
+            <div class="login-title" nz-col nzSpan="12">
+                xx公司
+            </div>
+        </div>
+        <div nz-row nzType="flex">
+            <div nz-col nzSpan="12" nzOffset="12" style="text-align: right;color: #d0d0d0;">
+                <span>—— 自己的OA</span>
+            </div>
+        </div>
+
+        <!-- 登录表单 -->
+        <div class="form-container" nz-row>
+
+            <!-- zorro 表单 -->
+            <!-- <form nz-form [formGroup]="loginForm" class="login-form" (ngSubmit)="submitForm()">
+
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="请输入工号！">
+                        <nz-input-group nzPrefixIcon="number">
+                            <input #userid type="text" nz-input formControlName="userid" placeholder="工号" nzSize="small" (ngModelChange)="useridChange($event)" />
+                        </nz-input-group>
+                    </nz-form-control>
+                </nz-form-item>
+
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="输入工号后自动获取">
+                        <nz-input-group nzPrefixIcon="user">
+                            <input type="text" nz-input formControlName="userName" placeholder="用户名" nzSize="large" />
+                        </nz-input-group>
+                    </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="请输入密码！">
+                        <nz-input-group nzPrefixIcon="lock">
+                            <input type="password" nz-input formControlName="password" placeholder="密码" nzSize="large" />
+                        </nz-input-group>
+                    </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-control>
+                        <button nz-button class="login-form-button" [nzType]="'primary'" style="width: 100%;">登录</button>
+                    </nz-form-control>
+                </nz-form-item>
+
+            </form> -->
+
+            <!-- material 表单 -->
+            <form class="example-form" [formGroup]="loginForm">
+                <mat-form-field class="example-full-width" style="width: 100%;">
+                    <mat-label>账号</mat-label>
+                    <input matInput  formControlname="userid">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width" style="width: 100%;">
+                    <mat-label>用户名</mat-label>
+                    <input matInput  formControlname="userName">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width" style="width: 100%;">
+                    <mat-label>密码</mat-label>
+                    <input matInput  formControlname="password">
+                </mat-form-field>
+
+            </form>
+
+            <div nz-row style="margin-top: 15px;">
+                <div nz-col nzSpan="24">
+                    <button mat-raised-button color="primary" style="width: 100%;"
+                        (click)="login()">登录</button>
+                </div>
+            </div>
+
+            <!-- 登录按钮下的其他登录方式 -->
+            <div nz-row nzType="flex" nzJustify="space-between" style="margin-top: 35px;">
+                <div nz-col nzSpan="18">
+                    <span>其他登录方式</span>&nbsp;
+                    <a><i nz-icon nzType="wechat" nzTheme="outline"></i></a>&nbsp;
+                    <a><i nz-icon nzType="qq" nzTheme="outline"></i></a>&nbsp;
+                    <a><i nz-icon nzType="dingding" nzTheme="outline"></i></a>&nbsp;
+                    <a><i nz-icon nzType="alipay" nzTheme="outline"></i></a>&nbsp;
+                    <a><i nz-icon nzType="taobao" nzTheme="outline"></i></a>&nbsp;
+                </div>
+
+                <div nz-col nzSpan="5">
+                    <span><a>注册账户</a></span>
+                </div>
+            </div>
+            <div nz-row nzType="flex" nzAlign="middle" nzJustify="center">
+                <div nz-col nzSpan="18" style="color: #a78587;margin-top: 8px;">
+                    <span>Copyright©2020 xx公司 出品</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
